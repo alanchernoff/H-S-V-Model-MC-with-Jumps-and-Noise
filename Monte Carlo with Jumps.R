@@ -16,7 +16,7 @@ n = 10000 #number of simulations
 blanks=matrix(0,nrow=n,ncol=1559)
 y = cbind(matrix(m,nrow=n,ncol=1),blanks)
 S2 = cbind(matrix(v,nrow=n,ncol=1),blanks)
-S2_jumps = matrix(0,nrow=n,ncol=1559)
+S2_jumps = matrix(0,nrow=n,ncol=1560)
 W1 = matrix(rnorm(n*15600),nrow=n,ncol=1560)
 n1 = matrix(rnorm(n*15600),nrow=n,ncol=1560)
 W2 = (n1*srho +rho*W1)
@@ -48,7 +48,7 @@ for (j in 1:10000){
 
 j_price = t(matrix(rnorm(n*15600,0,0.02),nrow=1560,ncol=n)*jump)
 
-j_vol = 
+j_vol = t(matrix(exp(rnorm(n*15600,-5,1)),nrow=1560,ncol=n)*jump)
 
 #Heston Volatility Equation pre-jumps (calculated separately for ease of IV calculation)
 
