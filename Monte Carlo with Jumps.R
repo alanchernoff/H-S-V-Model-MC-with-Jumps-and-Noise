@@ -11,14 +11,14 @@ srho = sqrt(1-rho^2)
 
 #Simulation set up 
 
-n = 10000 #number of simulations
+n = 2520 #number of simulations
 
 blanks=matrix(0,nrow=n,ncol=1559)
 y = cbind(matrix(m,nrow=n,ncol=1),blanks)
 S2 = cbind(matrix(v,nrow=n,ncol=1),blanks)
 S2_jumps = matrix(0,nrow=n,ncol=1560)
-W1 = matrix(rnorm(n*15600),nrow=n,ncol=1560)
-n1 = matrix(rnorm(n*15600),nrow=n,ncol=1560)
+W1 = matrix(rnorm(n*1560),nrow=n,ncol=1560)
+n1 = matrix(rnorm(n*1560),nrow=n,ncol=1560)
 W2 = (n1*srho +rho*W1)
 
 #To test for the correlation of -0.5 between brownian motions W1 and W2
