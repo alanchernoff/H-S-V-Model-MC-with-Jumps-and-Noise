@@ -1,6 +1,6 @@
 #Model Parametrs
 
-t=2340 #number of seconds in a 6.5 hour trading day
+t=23400 #number of seconds in a 6.5 hour trading day
 m = 0.05 
 phi = 5  
 v = 0.04 
@@ -12,7 +12,7 @@ srho = sqrt(1-rho^2)
 
 #Simulation set up 
 
-n = 10000 #number of simulations
+n = 100 #number of simulations
 
 blanks=matrix(0,nrow=n,ncol=(t-1))
 y = cbind(matrix(m,nrow=n,ncol=1),blanks)
@@ -71,8 +71,8 @@ for (i in 1:(t-1)){
 
 #Generate data for simulated 10 and 5 minute intervals
 
-y_10 = y[,seq(1,ncol(y), 60)]
-y_5 = y[,seq(1,ncol(y), 30)]
+y_10 = y[,seq(1,ncol(y), 600)]
+y_5 = y[,seq(1,ncol(y), 300)]
 
 #Volatility Calculation
 
