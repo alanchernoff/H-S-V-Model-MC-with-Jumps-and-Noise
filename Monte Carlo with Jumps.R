@@ -11,7 +11,7 @@ srho = sqrt(1-rho^2)
 
 #Simulation set up 
 
-n = 2520 #number of simulations
+n = 10000 #number of sample paths
 
 blanks=matrix(0,nrow=n,ncol=1559)
 y = cbind(matrix(m,nrow=n,ncol=1),blanks)
