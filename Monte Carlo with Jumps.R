@@ -29,7 +29,7 @@ W2 = (n1*srho +rho*W1)
 
 jmin = 0 ;
 jmax = 1/252 ;
-jp = jmin + runif(10000)*(jmax - jmin);
+jp = jmin + runif(n)*(jmax - jmin);
 jt = round(t*jp*252);
 ser = 1:t ;
 jump=matrix(0,nrow=t,ncol=n)
@@ -37,7 +37,7 @@ for (i in 1:t){
   jump[i,] = ser[i];
 }
 
-for (j in 1:10000){
+for (j in 1:n){
   for (i in 1:t){
     if (jump[i,j] == jt[j]){
       jump[i,j] = 1;
