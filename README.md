@@ -7,7 +7,7 @@ Introduced by Heston in A closed-form solution for options with stochastic volat
  
  d&sigma;<sup>2</sup><sub>t</sub>= &phi;(&upsilon;-&sigma;<sub>t</sub><sup>2</sup>)dt+&eta;&sigma;<sub>t</sub>W<sub>2t</sub>+J<sub>t</sub><sup>&sigma;</sup>dN<sub>2t</sub>
  
-Where &rho; is the correlation between Brownian motions W<sub>1t</sub> and W<sub>2t</sub>, and parameters m, &upsilon;, &eta;, &phi; and &rho; are set to parameter values deemed reasonable for stock price simulation, with set m = 0.05, &upsilon; = 0.04, &eta; = 0.5, &phi; = 5, and &rho; = -0.5.  
+Where &rho; is the correlation between Brownian motions W<sub>1t</sub> and W<sub>2t</sub>, and parameters m, &upsilon;, &eta;, &phi; and &rho; are set to parameter values deemed reasonable for stock price simulation, with m = 0.05, &upsilon; = 0.04, &eta; = 0.5, &phi; = 5, and &rho; = -0.5.  
 
 The Jump process is compoased of  jumps J<sub>t</sub><sup>y</sup>dN<sub>1t</sub> and J<sub>t</sub><sup>&sigma;</sup>dN<sub>2t</sub>, where J<sub>t</sub><sup>y</sup>dN<sub>1t</sub> is the price jump magnitude while J<sub>t</sub><sup>&sigma;</sup>dN<sub>2t</sub> the volatility jump magnitude.
 N<sub>1t</sub> and N<sub>1t</sub> are independent Poisson processes with the same arrival rate &lambda;. In the simulations, jumps occur only a single time per  day,  and  price  and  volatility  both  jump  at  the  same  time.   Price  jump  magnitude  isgiven by J<sub>t</sub><sup>y</sup>∼N(0,0.022),  and volatility jump magnitude is given by J<sub>t</sub><sup>&sigma;</sup>=exp(z) where z∼N(−5,1)
