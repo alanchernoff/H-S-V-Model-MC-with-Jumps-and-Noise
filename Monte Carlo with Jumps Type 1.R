@@ -12,7 +12,7 @@ srho = sqrt(1-rho^2)
 
 #Simulation set up 
 
-n = 100 #number of simulations
+n = 100 #number of simulated days
 
 blanks=matrix(0,nrow=n,ncol=(t-1))
 y = cbind(matrix(m,nrow=n,ncol=1),blanks)
