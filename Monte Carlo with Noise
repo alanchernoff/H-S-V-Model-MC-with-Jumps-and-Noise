@@ -13,7 +13,7 @@ srho = sqrt(1-rho^2)
 
 #Simulation set up 
 
-n = 10000 #number of simulations
+n = 100 #number of simulations
 
 blanks=matrix(0,nrow=n,ncol=(t-1))
 y = cbind(matrix(m,nrow=n,ncol=1),blanks)
@@ -47,8 +47,4 @@ y_1 = y[,seq(1,ncol(y), 60)]
 #Volatility Calculation
 
 RV = (rowSums(S2))*del
-
-#Reshaping Volatility
-
-RV_new <- matrix(RV,nrow=100,byrow=TRUE)
 
