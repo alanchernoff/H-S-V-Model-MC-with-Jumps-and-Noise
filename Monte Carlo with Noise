@@ -26,7 +26,7 @@ W2 = (n1*srho +rho*W1)
 #use cor(W1[i,],W2[i,]) for any i < number of simulations
 
 #Noise
-noise = t(matrix(rnorm(n*t,0,0.001),nrow=t,ncol=n))
+noise = t(matrix(rnorm(n*t,0,0.001^2),nrow=t,ncol=n))
 
 
 #Heston Volatility Equations
