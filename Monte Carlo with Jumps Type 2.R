@@ -47,7 +47,7 @@ for (j in 1:n){
   }
 }
 
-j_price = t(matrix(rnorm(n*t,0,0.005),nrow=t,ncol=n)*jump)
+j_price = t(matrix(rnorm(n*t,0,0.005^2),nrow=t,ncol=n)*jump)
 
 j_vol = t(matrix(exp(rnorm(n*t,-5,1)),nrow=t,ncol=n)*jump)
 
