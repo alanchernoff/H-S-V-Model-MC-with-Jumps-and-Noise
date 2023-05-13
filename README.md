@@ -1,7 +1,7 @@
 # H-S-V-Model-MC-with-Jumps
 A Monte-Carlo simulation of the Heston Stochastic Volatility model ran in R (including jump components)
 
-Introduced by Heston in A closed-form solution for options with stochastic volatility with appli-cations to bond and currency options (1993), the following code simulates the Heston Stochastic Volatility model using R, given by:
+Introduced by Heston in A closed-form solution for options with stochastic volatility with applications to bond and currency options (1993), the following code simulates the Heston Stochastic Volatility model using R, given by:
 
  dY<sub>t</sub>=(m-&sigma;<sub>t</sub><sup>2</sup>/2)dt+&sigma;<sub>t</sub>dW<sub>1t</sub>+J<sub>t</sub><sup>y</sup>dN<sub>1t</sub>
  
